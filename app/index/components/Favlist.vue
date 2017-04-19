@@ -1,6 +1,7 @@
 <template>
 	<div id="index">
-	    <div v-for="n in 10">div</div>
+		<h1>{{ msg }}</h1>
+	    <div v-for="n in 10">{{ n }}</div>
 	</div>
 </template>
 
@@ -18,4 +19,4 @@
     html {
         background: green;
     }
-</style>
+</style>	
