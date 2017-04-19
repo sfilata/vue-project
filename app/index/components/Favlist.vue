@@ -15,7 +15,7 @@
 </script>
 
 <style>
-    html{
-        background: red;
+    html {
+        background: green;
     }
 </style>

@@ -1,7 +1,15 @@
 import Vue from 'vue'
-import Favlist from './components/Favlist'
+import favlist from './components/Favlist.vue'
 
 new Vue({
-	el: 'body',
-	components: { Favlist }
+	el: '#app',
+	render: h => h(favlist),
+	components: { favlist }
 })
+
+// var app = new Vue({
+// 	el: '#app',
+// 	data: {
+// 		message: 'hello world'
+// 	}
+// });
