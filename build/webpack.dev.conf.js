@@ -19,7 +19,7 @@ config.plugins = [
 ];
 
 var devClient = './build/dev-client';
-// var devClient = 'webpack-hot-middleware/client';
+var devClient = 'webpack-hot-middleware/client';
 Object.keys(config.entry).forEach(function (name, i) {
 	var extras = [devClient];
 	config.entry[name] = extras.concat(config.entry[name]);

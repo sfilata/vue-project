@@ -22,13 +22,28 @@ config.module.loaders = [
     {
     	test: /\.js$/,
     	loader: 'babel-loader?presets=es2015',
+		// loader: 'babel-loader',
+	 //    query: {presets: ['es2015']},
     	exclude: /node_modules/
     }
 ];
 
 config.plugins = [
+	new webpack.DefinePlugin({
+        'process.env': {
+            NODE_ENV: '"production"'
+        }
+    }),
+    // 压缩代码
+    // new webpack.optimize.UglifyJsPlugin({
+    //     compress: {
+    //         warnings: false,
+    //         drop_console: true
+    //     }
+    // }),
 	new ExtractTextPlugin('../[name].[contenthash].css'), 
 	new webpack.HotModuleReplacementPlugin(),
+	new webpack.optimize.OccurrenceOrderPlugin(),
 
 	new HtmlWebpackPlugin({
 		filename: '../index.html',

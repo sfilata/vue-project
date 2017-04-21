@@ -34,7 +34,9 @@ module.exports = {
             },
             {
             	test: /\.js$/,
-            	loader: 'babel-loader?presets=es2015',
+                loader: 'babel-loader?presets=es2015',
+            	// loader: 'babel-loader',
+                // query: {presets: ['es2015']},
             	exclude: /node_modules/
             }
         ]
