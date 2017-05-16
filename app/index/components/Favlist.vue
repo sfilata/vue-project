@@ -1,7 +1,7 @@
 <template>
 	<div id="index">
 		<h1>{{ msg }}</h1>
-	    <div v-for="n in 10">{{ n }}</div>
+	    <div v-for="n in 5">{{ n }}</div>
 	</div>
 </template>
 
