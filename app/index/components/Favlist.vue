@@ -16,7 +16,5 @@
 </script>
 
 <style>
-    html {
-        background: green;
-    }
+
 </style>	
